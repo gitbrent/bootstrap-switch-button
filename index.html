@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75147115-7"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-75147115-7');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Bootstrap Switch Button is a bootstrap plugin that converts checkboxes into responsive switch buttons.">
@@ -11,14 +20,14 @@
 	<meta name="revisit-after" content="1 month">
 	<title>Bootstrap Switch Button Switch Button Checkbox</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap-switch-button.css">
 	<link rel="stylesheet" href="doc/stylesheet.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="js/bootstrap-switch-button.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
@@ -57,7 +66,7 @@
 		<section id="updated" class="container my-5">
 			<div class="alert alert-success" role="alert">
 				<h3 class="alert-heading">Made for Bootstrap 4!</h3>
-				<h6 class="font-weight-light">This page and all of the switch buttons shown are running on Bootstrap 4.2</h6>
+				<h6 class="font-weight-light">This page and all of the switch buttons shown are running on Bootstrap 4.x</h6>
 				<hr>
 				<div class="row">
 					<div class="col-12 col-md-4 mb-1 mb-md-0">
@@ -275,12 +284,8 @@
 
 			<h3 class="text-secondary mt-4">Initialize with JavaScript</h3>
 			<p>Simply call the <code>switchButton</code> method to convert checkboxes into switch button.</p>
-			<div class="example">
-				<input id="chkSwitch2" type="checkbox" checked>
-				<script>
-					/* just remove this in new version - we load code above before `script.js` can remove this actual HTML, which is then turned into switch-button! */
-					/*document.getElementById('chkToggle2').switchButton();*/
-				</script>
+			<div class="example2">
+				<code class="highlight hljs">document.getElementById('chkToggle2').switchButton();</code>
 			</div>
 		</section>
 
@@ -508,6 +513,5 @@
 	<!-- load highlight, then script.js for code to auto-highlight at load -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 	<script src="doc/script.js"></script>
-	<!-- TODO: Global site tag (gtag.js) - Google Analytics -->
 </body>
 </html>
