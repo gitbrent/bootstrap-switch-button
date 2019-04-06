@@ -2,16 +2,16 @@
 
 # Bootstrap Switch Button
 
-**Bootstrap Switch Button** is a converts plain checkboxes into awesome switch buttons.
+**Bootstrap Switch Button** converts plain checkboxes into awesome switch buttons.
 
 **************************************************************************************************
 
 #### Library Distributions
-Project                       |Description                                |GitHub Site                                    
-------------------------------|-------------------------------------------|------------------------------------------
-bootstrap4-toggle             | Supports bootstrap4 (requires jQuery)     | https://github.com/gitbrent/bootstrap4-toggle
-bootstrap-switch-button       | Supports bootstrap4+ (ES6 class, no deps) | https://github.com/gitbrent/bootstrap-switch-button
-bootstrap-switch-button-react | Supports bootstrap4+ (React component, no deps)| https://github.com/gitbrent/bootstrap-switch-button-react
+Project                                                                                    |Description
+-------------------------------------------------------------------------------------------|------------------------------------
+[bootstrap4-toggle](https://github.com/gitbrent/bootstrap4-toggle)                         | Supports bootstrap4 (requires jQuery)
+[bootstrap-switch-button](https://github.com/gitbrent/bootstrap-switch-button)             | Supports bootstrap4+ (ES6 class, no deps)
+[bootstrap-switch-button-react](https://github.com/gitbrent/bootstrap-switch-button-react) | Supports bootstrap4+ (React component, no deps)
 
 **************************************************************************************************
 
