@@ -1,11 +1,30 @@
 /*\
-|*| ========================================================================
-|*| Bootstrap Switch Button: bootstrap-switch-button.css v1.0.0
-|*| https://gitbrent.github.io/bootstrap-switch-button/
-|*| ========================================================================
-|*| Copyright 2018-2019 Brent Ely
-|*| Licensed under MIT
-|*| ========================================================================
+|*|  :: Bootstrap Switch Button ::
+|*|
+|*|  Bootstrap Switch Button
+|*|  https://github.com/gitbrent/bootstrap-switch-button
+|*|
+|*|  This library is released under the MIT Public License (MIT)
+|*|
+|*|  Bootstrap Switch Button (C) 2019-present Brent Ely (https://github.com/gitbrent)
+|*|
+|*|  Permission is hereby granted, free of charge, to any person obtaining a copy
+|*|  of this software and associated documentation files (the "Software"), to deal
+|*|  in the Software without restriction, including without limitation the rights
+|*|  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+|*|  copies of the Software, and to permit persons to whom the Software is
+|*|  furnished to do so, subject to the following conditions:
+|*|
+|*|  The above copyright notice and this permission notice shall be included in all
+|*|  copies or substantial portions of the Software.
+|*|
+|*|  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+|*|  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+|*|  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+|*|  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+|*|  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+|*|  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+|*|  SOFTWARE.
 \*/
 
 .btn-group-xs > .btn, .btn-xs {
@@ -113,24 +132,23 @@
 	opacity: 0.5;
 }
 
+/* bootstrap-4.x .form-control {height} values used as `min-height` to mirror output sizes */
+
 /* NOTE: Must come first, so classes below override as needed */
-/* [default] (bootstrap-4.1.3 - .btn - h:38px) */
-.switch.btn { min-width: 3.7rem; min-height: 2.15rem; }
+.switch.btn { min-width: 3.7rem; min-height: calc(1.5em + .75rem + 2px); }
 .switch-on.btn { padding-right: 1.5rem; }
 .switch-off.btn { padding-left: 1.5rem; }
 
-/* `lg` (bootstrap-4.1.3 - .btn - h:48px) */
-.switch.btn-lg { min-width: 5rem; min-height: 2.815rem; }
+.switch.btn-lg { min-width: 5rem; line-height: 1.5; min-height: calc(1.5em + 1rem + 2px); }
 .switch-on.btn-lg { padding-right: 2rem; }
 .switch-off.btn-lg { padding-left: 2rem; }
 .switch-handle.btn-lg { width: 2.5rem; }
 
-/* `sm` (bootstrap-4.1.3 - .btn - h:31px) */
-.switch.btn-sm { min-width: 3.125rem; min-height: 1.938rem; }
+.switch.btn-sm { min-width: 3.25rem; min-height: calc(1.5em + .5rem + 2px); }
 .switch-on.btn-sm { padding-right: 1rem; }
 .switch-off.btn-sm { padding-left: 1rem; }
 
 /* `xs` (bootstrap-3.3 - .btn - h:22px) */
-.switch.btn-xs { min-width: 2.19rem; min-height: 1.375rem; }
+.switch.btn-xs { min-width: 3.125rem; min-height: 1.375rem; }
 .switch-on.btn-xs { padding-right: .8rem; }
 .switch-off.btn-xs { padding-left: .8rem; }
