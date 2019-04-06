@@ -6,9 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-## [1.0.0](https://github.com/gitbrent/bootstrap-switch-button/tree/v1.0.0) 2019-01-19
+## [1.0.0](https://github.com/gitbrent/bootstrap-switch-button/tree/v1.0.0) 2019-03-05
 ### Added
-- Initial release (cloned `bootstrap4-toggle`)
+- Initial release
 ### Changed
 
 [Unreleased]: https://github.com/gitbrent/bootstrap-switch-button/compare/v1.0.0...HEAD

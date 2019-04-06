@@ -2,38 +2,16 @@
 
 # Bootstrap Switch Button
 
-**Bootstrap Switch Button** is a bootstrap plugin/widget that converts checkboxes into toggles.
-
-Visit https://gitbrent.github.io/bootstrap-switch-button/ for interactive demos.
-
-**************************************************************************************************
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Demos](#demos)
-- [Installation](#installation)
-  - [CDN](#cdn)
-  - [Download](#download)
-  - [NPM](#npm)
-  - [Yarn](#yarn)
-- [Usage](#usage)
-  - [Initialize With HTML](#initialize-with-html)
-  - [Initialize With Code](#initialize-with-code)
-- [API](#api)
-  - [Options](#options)
-  - [Methods](#methods)
-- [Events](#events)
-  - [Event Propagation](#event-propagation)
-  - [API vs Input](#api-vs-input)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+**Bootstrap Switch Button** is a bootstrap plugin/widget that converts checkboxes into switch buttons.
 
 **************************************************************************************************
 
 # Demos
-Visit https://gitbrent.github.io/bootstrap-switch-button/ for interactive checkbox toggle demos.
+Visit https://gitbrent.github.io/bootstrap-switch-button/ for interactive demos/documentation.
+
+![Demo GIF](https://github.com/gitbrent/bootstrap-switch-button/blob/master/img/bootstrap-switch-button-demo.gif?raw=true)
+
+**************************************************************************************************
 
 # Installation
 
@@ -59,21 +37,21 @@ yarn install bootstrap-switch-button
 # Usage
 
 ## Initialize With HTML
-Simply add `data-toggle="toggle"` to automatically convert a plain checkbox into a bootstrap 4 toggle.
+Simply add `data-toggle="switchButton"` to automatically convert a plain checkbox into a bootstrap 4 switch button.
 
 ```html
-<input id="chkToggle" type="checkbox" data-toggle="toggle">
+<input id="chkSwitch" type="checkbox" data-toggle="switchButton">
 ```
 
 ## Initialize With Code
-Toggles can also be initialized via JavaScript code.  
+Switch buttons can also be initialized via JavaScript code.  
 
-EX: Initialize id `chkToggle` with a single line of JavaScript.
+EX: Initialize id `chkSwitch` with a single line of JavaScript.
 ```html
-<input id="chkToggle" type="checkbox" checked>
+<input id="chkSwitch" type="checkbox" checked>
 <script>
   $(function(){
-    $('#chkToggle').bootstrapToggle();
+    $('#chkSwitch').switchButton();
   });
 </script>
 ```
@@ -85,11 +63,11 @@ EX: Initialize id `chkToggle` with a single line of JavaScript.
 * For data attributes, append the option name to `data-` (ex: `data-on="Enabled"`)
 
 ```html
-<input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
-<input type="checkbox" id="toggle-two">
+<input type="checkbox" data-toggle="switchButton" data-on="Enabled" data-off="Disabled">
+<input type="checkbox" id="switch-two">
 <script>
   $(function() {
-    $('#toggle-two').bootstrapToggle({
+    $('#switch-two').switchButton({
       on: 'Enabled',
       off: 'Disabled'
     });
@@ -99,46 +77,46 @@ EX: Initialize id `chkToggle` with a single line of JavaScript.
 
 Name      |Type       |Default    |Description                 |
 ----------|-----------|----------|----------------------------|
-`on`      |string/html|"On"      |Text of the on toggle
-`off`     |string/html|"Off"     |Text of the off toggle
-`size`    |string     |"normal"  |Size of the toggle. Possible values are: `large`, `normal`, `small`, `mini`.
-`onstyle` |string     |"primary" |Style of the on toggle. Possible values are: `primary`,`secondary`,`success`,`danger`,`warning`,`info`,`light`,`dark`
-`offstyle`|string     |"light"   |Style of the off toggle. Possible values are: `primary`,`secondary`,`success`,`danger`,`warning`,`info`,`light`,`dark`
-`style`   |string     |           |Appends the value to the class attribute of the toggle. This can be used to apply custom styles. Refer to Custom Styles for reference.
-`width`   |integer    |*null*     |Sets the width of the toggle. if set to *null*, width will be auto-calculated.
-`height`  |integer    |*null*     |Sets the height of the toggle. if set to *null*, height will be auto-calculated.
+`onlabel` |string/html|"On"      |Text of the on switch button
+`offlabel`|string/html|"Off"     |Text of the off switch button
+`onstyle` |string     |"primary" |Style of the on switch button. Possible values are: `primary`,`secondary`,`success`,`danger`,`warning`,`info`,`light`,`dark`
+`offstyle`|string     |"light"   |Style of the off switch button. Possible values are: `primary`,`secondary`,`success`,`danger`,`warning`,`info`,`light`,`dark`
+`size`    |string     |"normal"  |Size of the switch button. Possible values are: `large`, `normal`, `small`, `mini`.
+`style`   |string     |          |Appends the value to the class attribute of the switch button. This can be used to apply custom styles. Refer to Custom Styles for reference.
+`width`   |integer    |*null*    |Sets the width of the switch button. if set to *null*, width will be auto-calculated.
+`height`  |integer    |*null*    |Sets the height of the switch button. if set to *null*, height will be auto-calculated.
 
 ## Methods
-Methods can be used to control toggles directly.
+Methods can be used to control switch buttons directly.
 
 ```html
-<input id="toggle-demo" type="checkbox" data-toggle="toggle">
+<input id="switch-demo" type="checkbox" data-toggle="switchButton">
 ```
 
-Method     |Example                                         |Description
------------|------------------------------------------------|------------------------------------------
-initialize | `$('#toggle-demo').bootstrapToggle()`          |Initializes the toggle plugin with options
-destroy    | `$('#toggle-demo').bootstrapToggle('destroy')` |Destroys the toggle
-on         | `$('#toggle-demo').bootstrapToggle('on')`      |Sets the toggle to 'On' state
-off        | `$('#toggle-demo').bootstrapToggle('off')`     |Sets the toggle to 'Off' state
-toggle     | `$('#toggle-demo').bootstrapToggle('toggle')`  |Toggles the state of the toggle on/off
-enable     | `$('#toggle-demo').bootstrapToggle('enable')`  |Enables the toggle
-disable    | `$('#toggle-demo').bootstrapToggle('disable')` |Disables the toggle
+Method     |Example                                      |Description
+-----------|---------------------------------------------|------------------------------------------
+initialize | `$('#switch-demo').switchButton()`          |Initializes the switch button plugin with options
+destroy    | `$('#switch-demo').switchButton('destroy')` |Destroys the switch button
+on         | `$('#switch-demo').switchButton('on')`      |Sets the switch button to 'On' state
+off        | `$('#switch-demo').switchButton('off')`     |Sets the switch button to 'Off' state
+toggle     | `$('#switch-demo').switchButton('toggle')`  |Toggles the state of the switch button on/off
+enable     | `$('#switch-demo').switchButton('enable')`  |Enables the switch button
+disable    | `$('#switch-demo').switchButton('disable')` |Disables the switch button
 
 # Events
 
 ## Event Propagation
-Note All events are propagated to and from input element to the toggle.
+Note All events are propagated to and from input element to the switch button.
 
 You should listen to events from the `<input type="checkbox">` directly rather than look for custom events.
 
 ```html
-<input id="toggle-event" type="checkbox" data-toggle="toggle">
+<input id="switch-event" type="checkbox" data-toggle="switchButton">
 <div id="console-event"></div>
 <script>
   $(function() {
-    $('#toggle-event').change(function() {
-      $('#console-event').html('Toggle: ' + $(this).prop('checked'))
+    $('#switch-event').change(function() {
+      $('#console-event').html('Checked?: ' + $(this).prop('checked'))
     })
   })
 </script>
@@ -148,23 +126,23 @@ You should listen to events from the `<input type="checkbox">` directly rather t
 This also means that using the API or Input to trigger events will work both ways.
 
 ```html
-<input id="toggle-trigger" type="checkbox" data-toggle="toggle">
+<input id="switch-trigger" type="checkbox" data-toggle="switchButton">
 <button class="btn btn-success" onclick="toggleApiOn()" >On by API</button>
 <button class="btn btn-danger"  onclick="toggleApiOff()">Off by API</button>
 <button class="btn btn-success" onclick="toggleInpOn()" >On by Input</button>
 <button class="btn btn-danger"  onclick="toggleInpOff()">Off by Input</button>
 <script>
   function toggleApiOn() {
-    $('#toggle-trigger').bootstrapToggle('on')
+    $('#switch-trigger').switchButton('on')
   }
   function toggleApiOff() {
-    $('#toggle-trigger').bootstrapToggle('off')  
+    $('#switch-trigger').switchButton('off')  
   }
   function toggleInpOn() {
-    $('#toggle-trigger').prop('checked', true).change()
+    $('#switch-trigger').prop('checked', true).change()
   }
   function toggleInpOff() {
-    $('#toggle-trigger').prop('checked', false).change()
+    $('#switch-trigger').prop('checked', false).change()
   }
 </script>
 ```

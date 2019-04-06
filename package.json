@@ -16,13 +16,13 @@
   "keywords": [
     "bootstrap",
     "bootstrap4",
-	"bootstrap-4",
-	"bootstrap 4",
-	"bootstrap 4 checkbox",
-	"bootstrap 4 switch",
-	"bootstrap 4 toggle",
-	"bootstrap-checkbox",
-	"bootstrap-switch",
+    "bootstrap-4",
+    "bootstrap 4",
+    "bootstrap 4 checkbox",
+    "bootstrap 4 switch",
+    "bootstrap 4 toggle",
+    "bootstrap-checkbox",
+    "bootstrap-switch",
     "bootstrap-switch-button",
     "bootstrap-toggle"
   ],
@@ -34,7 +34,7 @@
     "url": "https://github.com/gitbrent/bootstrap-switch-button/issues"
   },
   "devDependencies": {
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-uglify": "^0.6.0"
