@@ -1,17 +1,24 @@
-[![MIT Licence](https://img.shields.io/github/license/gitbrent/bootstrap-switch-button.svg)](https://opensource.org/licenses/mit-license.php)   [![Bootstrap 4.3.1](https://img.shields.io/badge/bootstrap-4.3.1-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)  [![Known Vulnerabilities](https://snyk.io/test/npm/bootstrap-switch-button/badge.svg)](https://snyk.io/test/npm/bootstrap-switch-button)
+[![MIT Licence](https://img.shields.io/github/license/gitbrent/bootstrap-switch-button.svg)](https://opensource.org/licenses/mit-license.php)   [![Bootstrap 4.3.1](https://img.shields.io/badge/bootstrap-4.3.1-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)
 
 # Bootstrap Switch Button
 
-**Bootstrap Switch Button** is a bootstrap plugin/widget that converts checkboxes into switch buttons.
+**Bootstrap Switch Button** is a converts plain checkboxes into awesome switch buttons.
+
+**************************************************************************************************
+
+#### Library Distributions
+Project                       |Description                                |GitHub Site                                    
+------------------------------|-------------------------------------------|------------------------------------------
+bootstrap4-toggle             | Supports bootstrap4 (requires jQuery)     | https://github.com/gitbrent/bootstrap4-toggle
+bootstrap-switch-button       | Supports bootstrap4+ (ES6 class, no deps) | https://github.com/gitbrent/bootstrap-switch-button
+bootstrap-switch-button-react | Supports bootstrap4+ (React component, no deps)| https://github.com/gitbrent/bootstrap-switch-button-react
 
 **************************************************************************************************
 
 # Demos
-Visit https://gitbrent.github.io/bootstrap-switch-button/ for interactive demos/documentation.
+**Demos and API Docs:** https://gitbrent.github.io/bootstrap-switch-button/  
 
 ![Demo GIF](https://github.com/gitbrent/bootstrap-switch-button/blob/master/img/bootstrap-switch-button-demo.gif?raw=true)
-
-**************************************************************************************************
 
 # Installation
 
