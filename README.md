@@ -13,12 +13,12 @@ Project                                                                         
 [bootstrap-switch-button](https://github.com/gitbrent/bootstrap-switch-button)             | Supports bootstrap4+ (ES6 class, no dependencies)
 [bootstrap-switch-button-react](https://github.com/gitbrent/bootstrap-switch-button-react) | Supports bootstrap4+ (React component, no dependencies)
 
-**************************************************************************************************
 
 # Demos
 **Demos and API Docs:** https://gitbrent.github.io/bootstrap-switch-button/  
 
 ![Demo GIF](https://github.com/gitbrent/bootstrap-switch-button/blob/master/img/bootstrap-switch-button-demo.gif?raw=true)
+
 
 # Installation
 
