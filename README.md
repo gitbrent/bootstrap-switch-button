@@ -1,4 +1,4 @@
-[![MIT Licence](https://img.shields.io/github/license/gitbrent/bootstrap-switch-button.svg)](https://opensource.org/licenses/mit-license.php)   [![Bootstrap 4.3.1](https://img.shields.io/badge/bootstrap-4.3.1-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)
+[![MIT Licence](https://img.shields.io/github/license/gitbrent/bootstrap-switch-button.svg)](https://opensource.org/licenses/mit-license.php)   [![Bootstrap 4.3.1](https://img.shields.io/badge/bootstrap-4.3.1-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)  [![Known Vulnerabilities](https://snyk.io/test/npm/bootstrap-switch-button/badge.svg)](https://snyk.io/test/npm/bootstrap-switch-button)  [![npm downloads](https://img.shields.io/npm/dm/bootstrap-switch-button.svg)](https://www.npmjs.com/package/bootstrap-switch-button)
 
 # Bootstrap Switch Button
 
