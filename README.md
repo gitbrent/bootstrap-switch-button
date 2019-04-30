@@ -38,7 +38,7 @@ npm install bootstrap-switch-button
 
 ## Yarn
 ```ksh
-yarn install bootstrap-switch-button
+yarn add bootstrap-switch-button
 ```
 
 # Usage
