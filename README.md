@@ -44,10 +44,10 @@ yarn add bootstrap-switch-button
 # Usage
 
 ## Initialize With HTML
-Simply add `data-toggle="switchButton"` to automatically convert a plain checkbox into a bootstrap 4 switch button.
+Simply add `data-toggle="switchbutton"` to automatically convert a plain checkbox into a bootstrap 4 switch button.
 
 ```html
-<input id="chkSwitch" type="checkbox" data-toggle="switchButton">
+<input id="chkSwitch" type="checkbox" data-toggle="switchbutton">
 ```
 
 ## Initialize With Code
@@ -58,7 +58,7 @@ EX: Initialize id `chkSwitch` with a single line of JavaScript.
 <input id="chkSwitch" type="checkbox" checked>
 <script>
   $(function(){
-    $('#chkSwitch').switchButton();
+    $('#chkSwitch').switchbutton();
   });
 </script>
 ```
@@ -70,7 +70,7 @@ EX: Initialize id `chkSwitch` with a single line of JavaScript.
 * For data attributes, append the option name to `data-` (ex: `data-on="Enabled"`)
 
 ```html
-<input type="checkbox" data-toggle="switchButton" data-on="Enabled" data-off="Disabled">
+<input type="checkbox" data-toggle="switchbutton" data-on="Enabled" data-off="Disabled">
 <input type="checkbox" id="switch-two">
 <script>
   $(function() {
@@ -97,7 +97,7 @@ Name      |Type       |Default    |Description                 |
 Methods can be used to control switch buttons directly.
 
 ```html
-<input id="switch-demo" type="checkbox" data-toggle="switchButton">
+<input id="switch-demo" type="checkbox" data-toggle="switchbutton">
 ```
 
 Method     |Example                                      |Description
@@ -118,7 +118,7 @@ Note All events are propagated to and from input element to the switch button.
 You should listen to events from the `<input type="checkbox">` directly rather than look for custom events.
 
 ```html
-<input id="switch-event" type="checkbox" data-toggle="switchButton">
+<input id="switch-event" type="checkbox" data-toggle="switchbutton">
 <div id="console-event"></div>
 <script>
   $(function() {
@@ -133,7 +133,7 @@ You should listen to events from the `<input type="checkbox">` directly rather t
 This also means that using the API or Input to trigger events will work both ways.
 
 ```html
-<input id="switch-trigger" type="checkbox" data-toggle="switchButton">
+<input id="switch-trigger" type="checkbox" data-toggle="switchbutton">
 <button class="btn btn-success" onclick="toggleApiOn()" >On by API</button>
 <button class="btn btn-danger"  onclick="toggleApiOff()">Off by API</button>
 <button class="btn btn-success" onclick="toggleInpOn()" >On by Input</button>
