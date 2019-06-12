@@ -34,6 +34,7 @@
     "url": "https://github.com/gitbrent/bootstrap-switch-button/issues"
   },
   "devDependencies": {
+    "clean-css": "^4.2.1",
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-cssmin": "^0.10.0",
