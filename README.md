@@ -67,16 +67,16 @@ EX: Initialize id `chkSwitch` with a single line of JavaScript.
 
 ## Options
 * Options can be passed via data attributes or JavaScript
-* For data attributes, append the option name to `data-` (ex: `data-on="Enabled"`)
+* For data attributes, append the option name to `data-` (ex: `data-onlabel="Enabled"`)
 
 ```html
-<input type="checkbox" data-toggle="switchbutton" data-on="Enabled" data-off="Disabled">
+<input type="checkbox" data-toggle="switchbutton" data-onlabel="Enabled" data-offlabel="Disabled">
 <input type="checkbox" id="switch-two">
 <script>
   $(function() {
     $('#switch-two').switchButton({
-      on: 'Enabled',
-      off: 'Disabled'
+      onlabel: 'Enabled',
+      offlabel: 'Disabled'
     });
   })
 </script>
