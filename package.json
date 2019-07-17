@@ -36,7 +36,7 @@
   "devDependencies": {
     "clean-css": "^4.2.1",
     "grunt": "^1.0.4",
-    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-uglify-es": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony"
