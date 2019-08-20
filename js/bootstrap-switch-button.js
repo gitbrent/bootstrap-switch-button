@@ -192,7 +192,7 @@
 		}
 		trigger(silent) {
 			//switchBtn.off('change.bs.switch');
-			//if ( !silent ) this.element.change();
+			if ( !silent ) this.element.dispatchEvent(new Event('change', { 'bubbles': true }));
 			//this.element.on('change.bs.switch', $.proxy(function() {
 			//	this.update()
 			//}, this))
