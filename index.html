@@ -470,9 +470,9 @@
 				<div id="console-event"></div>
 				<script>
 					$(function() {
-						$('#switch-event').change(function() {
-							$('#console-event').html('Switch-Button: ' + $(this).prop('checked'))
-						})
+						document.getElementById('switch-event').addEventListener('change',function() {
+							document.getElementById('console-event').innerHTML = 'Switch-Button: ' + this.checked;
+						});
 					})
 				</script>
 			</div>
