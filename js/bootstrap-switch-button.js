@@ -237,9 +237,9 @@
 			ele.switchButton();
 		});
 	}
-})();
 
-// Export library if possible
-if ( typeof module !== 'undefined' && module.exports ) {
-	module.exports = SwitchBtn;
-}
+	// Export library if possible
+	if ( typeof module !== 'undefined' && module.exports ) {
+		module.exports = SwitchBtn;
+	}
+})();
