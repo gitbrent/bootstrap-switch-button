@@ -134,7 +134,7 @@ If you want use clean JavaScript without JQuery, you can use `ontoggle="yourFunc
 <input id="switch-event" type="checkbox" data-toggle="switchbutton" ontoggle="yourFunction(this)">
 <script>
   function yourFunction(swtButton){
-    alert("Button state: " + swiButton.checked);
+    alert("Button state: " + swtButton.checked);
   }
 </script>
 ```
