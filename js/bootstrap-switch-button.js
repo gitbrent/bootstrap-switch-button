@@ -152,6 +152,7 @@
 			if ( this.element.checked ) this.off();
 			else this.on();
 			if ( typeof event !== 'undefined' && event ) event.preventDefault();
+			if ( this.element.ontoggle !== null ) this.element.ontoggle();
 		}
 		on(silent) {
 			if ( this.element.disabled ) return false;
