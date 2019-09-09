@@ -128,6 +128,16 @@ You should listen to events from the `<input type="checkbox">` directly rather t
   })
 </script>
 ```
+If you want use clean JavaScript without JQuery, you can use `ontoggle="yourFunction()"`
+
+```html
+<input id="switch-event" type="checkbox" data-toggle="switchbutton" ontoggle="yourFunction(this)">
+<script>
+  function yourFunction(swtButton){
+    alert("Button state: " + swiButton.checked);
+  }
+</script>
+```
 
 ## API vs Input
 This also means that using the API or Input to trigger events will work both ways.
