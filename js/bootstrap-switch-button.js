@@ -79,11 +79,13 @@
 			// 1: On
 			var switchOn = document.createElement('label');
 			switchOn.setAttribute('class', 'btn btn-'+this.options.onstyle+' btn-'+this.options.size);
+			switchOn.setAttribute('for', this.element.id)
 			switchOn.innerHTML = this.options.onlabel;
 
 			// 2: Off
 			var switchOff = document.createElement('label');
 			switchOff.setAttribute('class', 'btn btn-'+this.options.offstyle+' btn-'+this.options.size);
+			switchOn.setAttribute('for', this.element.id)
 			switchOff.innerHTML = this.options.offlabel;
 
 			// 3: Handle
@@ -191,6 +193,7 @@
 			else this.off(silent);
 		}
 		trigger(silent) {
+			// TODO:
 			//switchBtn.off('change.bs.switch');
 			//if ( !silent ) this.element.change();
 			//this.element.on('change.bs.switch', $.proxy(function() {
