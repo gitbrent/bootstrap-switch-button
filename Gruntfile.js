@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         preserveComments: "some",
         sourceMap: true,
         banner:
-          '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+          '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */'
       },
       build: {
         expand: true,
