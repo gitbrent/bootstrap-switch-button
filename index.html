@@ -15,19 +15,19 @@
 	<meta name="description" content="Bootstrap Switch Button is a bootstrap plugin that converts checkboxes into responsive switch buttons.">
 	<meta name="keywords" content="bootstrap, switch, button, bootstrap-checkbox, bootstrap-switch, bootstrap-switch-button, bootstrap-toggle">
 	<meta name="author" content="https://github.com/gitbrent">
-	<meta name="version" content="v1.0.0">
+	<meta name="version" content="20200216">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="1 month">
-	<title>Bootstrap Switch Button Switch Button Checkbox</title>
+	<title>Bootstrap Switch Button</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/bootstrap-switch-button.css">
-	<link rel="stylesheet" href="doc/stylesheet.css">
+	<link rel="stylesheet" href="assets/stylesheet.css">
+	<link rel="stylesheet" href="css/bootstrap-switch-button.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="js/bootstrap-switch-button.js"></script>
+	<script src="dist/bootstrap-switch-button.min.js"></script>
 </head>
 <body>
 	<header>
@@ -111,8 +111,8 @@
 			<hr>
 
 			<h3 class="text-secondary mt-4">CDN</h3>
-			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.0.0/css/bootstrap-switch-button.min.css" rel="stylesheet"&gt;
-&lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.0.0/js/bootstrap-switch-button.min.js"&gt;&lt;/script&gt;</code>
+			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"&gt;&lt;/script&gt;</code>
 
 			<h3 class="text-secondary mt-4">Download</h3>
 			<a href="https://github.com/gitbrent/bootstrap-switch-button/releases/latest">GitHub Latest release</a>
@@ -470,6 +470,33 @@
 					})
 				</script>
 			</div>
+			<h3 class="text-secondary mt-4">Stopping Event Propagation</h3>
+			<p>
+				Passing <code>true</code> to the on/off methods will enable the silent option to prevent the control from propagating the change event in
+				cases where you want to update the controls on/off state, but do not want to fire the onChange event.
+			</p>
+			<div class="example">
+				<input id="toggle-silent" type="checkbox" data-toggle="switchbutton" onchange="$('#chgConsole').text(new Date().toISOString()+' ... change event fired!')">
+				<button class="btn btn-success" onclick="toggleApiOnSilent()" >On by API (silent)</button>
+				<button class="btn btn-success"  onclick="toggleApiOffSilent()">Off by API (silent)</button>
+				<button class="btn btn-warning" onclick="toggleApiOnNotSilent()">On by API (not silent)</button>
+				<button class="btn btn-warning" onclick="toggleApiOffNotSilent()">On by API (not silent)</button>
+				<script>
+					function toggleApiOnSilent() {
+						document.getElementById('toggle-silent').switchButton('on', true);
+					}
+					function toggleApiOffSilent() {
+						document.getElementById('toggle-silent').switchButton('off', true);
+					}
+					function toggleApiOnNotSilent() {
+						document.getElementById('toggle-silent').switchButton('on');
+					}
+					function toggleApiOffNotSilent() {
+						document.getElementById('toggle-silent').switchButton('off');
+					}
+				</script>
+				<pre class="mb-0"><code id="chgConsole" class="text-info"></code></pre>
+			</div>
 
 			<h3 class="text-secondary mt-4">API Input</h3>
 			<p>This also means that using the API or Input to trigger events will work both ways.</p>
@@ -512,6 +539,6 @@
 
 	<!-- load highlight, then script.js for code to auto-highlight at load -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
-	<script src="doc/script.js"></script>
+	<script src="assets/script.js"></script>
 </body>
 </html>
