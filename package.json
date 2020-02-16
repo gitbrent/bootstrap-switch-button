@@ -10,10 +10,28 @@
   "license": "MIT",
   "main": "dist/bootstrap-switch-button.min.js",
   "files": [
-    "css/bootstrap-switch-button.css",
-    "dist/bootstrap-switch-button.min.js",
-    "dist/bootstrap-switch-button.min.js.map"
+    "css",
+    "dist"
   ],
+  "scripts": {
+    "build": "grunt"
+  },
+  "directories": {
+    "example": "demo",
+    "lib": "dist"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-uglify-es": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitbrent/bootstrap-switch-button.git"
+  },
   "keywords": [
     "bootstrap",
     "bootstrap4",
@@ -27,19 +45,7 @@
     "bootstrap-switch-button",
     "bootstrap-toggle"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gitbrent/bootstrap-switch-button.git"
-  },
   "bugs": {
     "url": "https://github.com/gitbrent/bootstrap-switch-button/issues"
-  },
-  "devDependencies": {
-    "clean-css": "^4.2.1",
-    "grunt": "^1.0.4",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-uglify": "^4.0.1",
-    "grunt-contrib-uglify-es": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony"
   }
 }
