@@ -15,7 +15,7 @@
 	<meta name="description" content="Bootstrap Switch Button is a bootstrap plugin that converts checkboxes into responsive switch buttons.">
 	<meta name="keywords" content="bootstrap, switch, button, bootstrap-checkbox, bootstrap-switch, bootstrap-switch-button, bootstrap-toggle">
 	<meta name="author" content="https://github.com/gitbrent">
-	<meta name="version" content="20200215">
+	<meta name="version" content="20200216">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="1 month">
 	<title>Bootstrap Switch Button</title>
@@ -469,6 +469,33 @@
 						})
 					})
 				</script>
+			</div>
+			<h3 class="text-secondary mt-4">Stopping Event Propagation</h3>
+			<p>
+				Passing <code>true</code> to the on/off methods will enable the silent option to prevent the control from propagating the change event in
+				cases where you want to update the controls on/off state, but do not want to fire the onChange event.
+			</p>
+			<div class="example">
+				<input id="toggle-silent" type="checkbox" data-toggle="switchbutton" onchange="$('#chgConsole').text(new Date().toISOString()+' ... change event fired!')">
+				<button class="btn btn-success" onclick="toggleApiOnSilent()" >On by API (silent)</button>
+				<button class="btn btn-success"  onclick="toggleApiOffSilent()">Off by API (silent)</button>
+				<button class="btn btn-warning" onclick="toggleApiOnNotSilent()">On by API (not silent)</button>
+				<button class="btn btn-warning" onclick="toggleApiOffNotSilent()">On by API (not silent)</button>
+				<script>
+					function toggleApiOnSilent() {
+						document.getElementById('toggle-silent').switchButton('on', true);
+					}
+					function toggleApiOffSilent() {
+						document.getElementById('toggle-silent').switchButton('off', true);
+					}
+					function toggleApiOnNotSilent() {
+						document.getElementById('toggle-silent').switchButton('on');
+					}
+					function toggleApiOffNotSilent() {
+						document.getElementById('toggle-silent').switchButton('off');
+					}
+				</script>
+				<pre class="mb-0"><code id="chgConsole" class="text-info"></code></pre>
 			</div>
 
 			<h3 class="text-secondary mt-4">API Input</h3>

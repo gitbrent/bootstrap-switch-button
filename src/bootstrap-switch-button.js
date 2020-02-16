@@ -208,14 +208,14 @@
 	 * Add `switchButton` prototype function to HTML Elements
 	 * Enables execution when used with HTML - ex: `document.getElementById('switch-trigger').switchButton('on')`
 	 */
-	Element.prototype.switchButton = function(options) {
+	Element.prototype.switchButton = function(options, silent) {
 		var _switchBtn = this.switchBtn || new SwitchBtn(this, options);
 
 		// Execute method calls
 		if (options && typeof options === 'string') {
 			if (options.toLowerCase() == 'toggle') _switchBtn.toggle();
-			else if (options.toLowerCase() == 'on') _switchBtn.on(false);
-			else if (options.toLowerCase() == 'off') _switchBtn.off(false);
+			else if (options.toLowerCase() == 'on') _switchBtn.on(silent);
+			else if (options.toLowerCase() == 'off') _switchBtn.off(silent);
 			else if (options.toLowerCase() == 'enable') _switchBtn.enable();
 			else if (options.toLowerCase() == 'disable') _switchBtn.disable();
 			else if (options.toLowerCase() == 'destroy') _switchBtn.destroy();
