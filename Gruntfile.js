@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
-    clean: ["dist"],
+    clean: ["dist/*"],
     uglify: {
       options: {
         preserveComments: "some",
@@ -13,9 +13,9 @@ module.exports = function(grunt) {
       },
       build: {
         expand: true,
-        cwd: "js",
+        cwd: "src",
         src: ["**/*.js", ["!**/*.min.js"]],
-        dest: "js",
+        dest: "dist",
         ext: ".min.js"
       }
     },
