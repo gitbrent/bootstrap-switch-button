@@ -17,7 +17,7 @@ Project                                                                         
 # Demos
 **Demos and API Docs:** https://gitbrent.github.io/bootstrap-switch-button/  
 
-![Demo GIF](https://github.com/gitbrent/bootstrap-switch-button/blob/master/img/bootstrap-switch-button-demo.gif?raw=true)
+![Demo GIF](https://github.com/gitbrent/bootstrap-switch-button/blob/master/demo/assets/bootstrap-switch-button-demo.gif?raw=true)
 
 
 # Installation
