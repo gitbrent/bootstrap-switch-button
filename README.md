@@ -24,8 +24,8 @@ Project                                                                         
 
 ## CDN
 ```html
-<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.0.0/css/bootstrap-switch-button.min.css" rel="stylesheet">  
-<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.0.0/js/bootstrap-switch-button.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">  
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/js/bootstrap-switch-button.min.js"></script>
 ```
 
 ## Download
@@ -33,7 +33,7 @@ Project                                                                         
 
 ## NPM
 ```ksh
-npm install bootstrap-switch-button
+npm i bootstrap-switch-button -- save
 ```
 
 ## Yarn
