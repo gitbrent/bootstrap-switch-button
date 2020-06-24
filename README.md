@@ -68,7 +68,7 @@ EX: Initialize id `chkSwitch` with a single line of JavaScript.
 <input id="chkSwitch" type="checkbox" checked />
 <script>
   $(function() {
-    $("#chkSwitch").switchbutton();
+    $("#chkSwitch")[0].switchButton();
   });
 </script>
 ```
@@ -90,7 +90,7 @@ EX: Initialize id `chkSwitch` with a single line of JavaScript.
 <input type="checkbox" id="switch-two" />
 <script>
   $(function() {
-    $("#switch-two").switchButton({
+    $("#switch-two")[0].switchButton({
       onlabel: "Enabled",
       offlabel: "Disabled"
     });
@@ -119,13 +119,13 @@ Methods can be used to control switch buttons directly.
 
 | Method     | Example                                     | Description                                       |
 | ---------- | ------------------------------------------- | ------------------------------------------------- |
-| initialize | `$('#switch-demo').switchButton()`          | Initializes the switch button plugin with options |
-| destroy    | `$('#switch-demo').switchButton('destroy')` | Destroys the switch button                        |
-| on         | `$('#switch-demo').switchButton('on')`      | Sets the switch button to 'On' state              |
-| off        | `$('#switch-demo').switchButton('off')`     | Sets the switch button to 'Off' state             |
-| toggle     | `$('#switch-demo').switchButton('toggle')`  | Toggles the state of the switch button on/off     |
-| enable     | `$('#switch-demo').switchButton('enable')`  | Enables the switch button                         |
-| disable    | `$('#switch-demo').switchButton('disable')` | Disables the switch button                        |
+| initialize | `$('#switch-demo')[0].switchButton()`          | Initializes the switch button plugin with options |
+| destroy    | `$('#switch-demo')[0].switchButton('destroy')` | Destroys the switch button                        |
+| on         | `$('#switch-demo')[0].switchButton('on')`      | Sets the switch button to 'On' state              |
+| off        | `$('#switch-demo')[0].switchButton('off')`     | Sets the switch button to 'Off' state             |
+| toggle     | `$('#switch-demo')[0].switchButton('toggle')`  | Toggles the state of the switch button on/off     |
+| enable     | `$('#switch-demo')[0].switchButton('enable')`  | Enables the switch button                         |
+| disable    | `$('#switch-demo')[0].switchButton('disable')` | Disables the switch button                        |
 
 # Events
 
@@ -159,10 +159,10 @@ This also means that using the API or Input to trigger events will work both way
 <button class="btn btn-danger" onclick="toggleInpOff()">Off by Input</button>
 <script>
   function toggleApiOn() {
-    $("#switch-trigger").switchButton("on");
+    $("#switch-trigger")[0].switchButton("on");
   }
   function toggleApiOff() {
-    $("#switch-trigger").switchButton("off");
+    $("#switch-trigger")[0].switchButton("off");
   }
   function toggleInpOn() {
     $("#switch-trigger")
