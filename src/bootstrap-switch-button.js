@@ -102,7 +102,6 @@
 			// 5: Container
 			var switchCont = document.createElement('div');
 			switchCont.setAttribute('class', 'switch btn');
-			switchCont.classList.add(this.element.checked ? 'btn-' + this.options.onstyle : 'btn-' + this.options.offstyle);
 			if (this.options.size) switchCont.classList.add('btn-' + this.options.size);
 			if (this.options.style) switchCont.classList.add(this.options.style);
 
@@ -154,40 +153,49 @@
 		}
 		on(silent) {
 			if (this.element.disabled) return false;
-			this.switch.classList.remove('btn-' + this.options.offstyle);
-			this.switch.classList.add('btn-' + this.options.onstyle);
-			this.switch.classList.remove('off');
 			this.element.checked = true;
-			if (!silent) this.trigger();
+			this.update(silent)
 		}
 		off(silent) {
 			if (this.element.disabled) return false;
-			this.switch.classList.remove('btn-' + this.options.onstyle);
-			this.switch.classList.add('btn-' + this.options.offstyle);
-			this.switch.classList.add('off');
 			this.element.checked = false;
-			if (!silent) this.trigger();
+			this.update(silent)
 		}
 
 		/**
 		 * Keep Switch-Button and corresponding checkbox in-sync
 		 */
 		enable() {
-			this.switch.classList.remove('disabled');
-			this.switch.removeAttribute('disabled');
 			this.element.removeAttribute('disabled');
+			this.update();
 		}
 		disable() {
 			this.switch.classList.add('disabled');
-			this.switch.setAttribute('disabled', 'disabled');
-			this.element.setAttribute('disabled', 'disabled');
+			this.update();
 		}
 
 		update(silent) {
-			if (this.element.disabled) this.disable();
-			else this.enable();
-			if (this.element.checked) this.on(silent);
-			else this.off(silent);
+			if (this.element.disabled) {
+				this.switch.classList.add('disabled');
+				this.switch.setAttribute('disabled', 'disabled');
+				this.element.setAttribute('disabled', 'disabled');
+			} else {
+				this.switch.classList.remove('disabled');
+				this.switch.removeAttribute('disabled');
+				this.element.removeAttribute('disabled');
+			}
+			
+			if (this.element.checked) {
+				this.switch.classList.remove('btn-' + this.options.offstyle);
+				this.switch.classList.add('btn-' + this.options.onstyle);
+				this.switch.classList.remove('off');
+			} else {
+				this.switch.classList.remove('btn-' + this.options.onstyle);
+				this.switch.classList.add('btn-' + this.options.offstyle);
+				this.switch.classList.add('off');
+			}
+			
+			this.trigger(silent);
 		}
 		trigger(silent) {
 			if (!silent) this.element.dispatchEvent(new Event('change', { bubbles: true }));
